@@ -62,10 +62,12 @@ namespace WndApp_2025
                     HttpClient client = MTLS_Cert_Lib.MTLSClientCertificate.CreateHttpClientAutomatic();
                     this.txtResult.Text = this.txtResult.Text + "\r\n  Creating the HttpClient Response";
                     this.txtResult.Text = this.txtResult.Text + "\r\n  Calling HttpClient Response";
-                    HttpResponseMessage response = MTLS_Cert_Lib.MTLSClientCertificate.HttpClientGet(client, this.txtUrl.Text);
+                    //HttpResponseMessage response = MTLS_Cert_Lib.MTLSClientCertificate.HttpClientGet(client, this.txtUrl.Text);
+                    HttpResponseMessage response = MTLS_Cert_Lib.MTLSClientCertificate.HttpClientSend(MTLS_Cert_Lib.HttpMethodEnum.GET, client, this.txtUrl.Text);
                     this.txtResult.Text = this.txtResult.Text + "\r\n  Getting the Response";
                     string responseContent = MTLS_Cert_Lib.MTLSClientCertificate.GetHttpResponseContent(response);
                     this.txtResult.Text = responseContent;
+                  
                 }
                 catch(Exception ex)
                 {
