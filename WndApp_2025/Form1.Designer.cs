@@ -1,6 +1,6 @@
 ﻿namespace WndApp_2025
 {
-    partial class Form1
+    partial class frmMTLSCertTesting
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,7 @@
             this.txtUrl.Size = new System.Drawing.Size(605, 26);
             this.txtUrl.TabIndex = 4;
             // 
-            // Form1
+            // frmMTLSCertTesting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,8 +91,10 @@
             this.Controls.Add(this.cmdFetch);
             this.Controls.Add(this.cmdClear);
             this.Controls.Add(this.txtResult);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "frmMTLSCertTesting";
+            this.ShowIcon = false;
+            this.Text = "Request From MTLS Certificate Testing";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

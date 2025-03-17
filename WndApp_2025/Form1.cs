@@ -14,12 +14,12 @@ using MTLS_Cert_Lib;
 
 namespace WndApp_2025
 {
-    public partial class Form1 : Form
+    public partial class frmMTLSCertTesting : Form
     {
 
         string clientCertificatePath;
         string clientCertificatePassword;
-        public Form1()
+        public frmMTLSCertTesting()
         {
             
             InitializeComponent();
@@ -50,8 +50,8 @@ namespace WndApp_2025
                 this.txtResult.Text = this.txtResult.Text + "\r\n  Load the Certificate";
                 try
                 {
-                    MTLS_Cert_Lib.MTLSClientCertificate.ClientCertificatePath = clientCertificatePath;
-                    MTLS_Cert_Lib.MTLSClientCertificate.ClientCertificatePassword = clientCertificatePassword;
+                    //MTLS_Cert_Lib.MTLSClientCertificate.ClientCertificatePath = clientCertificatePath;
+                    //MTLS_Cert_Lib.MTLSClientCertificate.ClientCertificatePassword = clientCertificatePassword;
                     MTLS_Cert_Lib.MTLSClientCertificate.ClientCertificate_CacheKey = "Testsubbu";
                     //X509Certificate2 certificate = new X509Certificate2(clientCertificatePath, clientCertificatePassword);
 
